@@ -5,7 +5,8 @@ from sqlalchemy.orm import relationship
 from base.database import Base
 
 from sqlalchemy import Column, Integer, String, VARCHAR, DateTime, UUID, ForeignKey
-
+from recommended.models import Recommended
+from account.models import User
 
 class EventDetail(Base):
     __tablename__ = 'event_detail'
